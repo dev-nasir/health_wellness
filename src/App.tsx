@@ -1,13 +1,13 @@
 import "./App.css";
+import Landing from "./pages/landing";
+
 
 
 function App() {
-  return (
-    
- <h1 className="text-3xl text-primary">
-    Hello world!
-  </h1>
-  )
+  return <>
+  <Landing />;
+  </>
+
 }
 
-export default App
+export default App;
