@@ -3,7 +3,7 @@ const ArticalSection = () => {
     <section
       className="relative bg-cover bg-center pt-10 pb-20"
       style={{
-        backgroundImage: `url('public/artical-bg.png')`, // Correct path for public folder
+        backgroundImage: `url('/artical-bg.png')`, // Correct path for public folder
       }}
     >
       <div className="px-4 text-center">
