@@ -24,7 +24,7 @@ const GetInTouch = () => {
     setIsPlaying(false);
     setIsButtonVisible(true); // Show the button again when video ends
   };
-
+  console.log(isPlaying);
   return (
     <section className="bg-white py-16 px-4 sm:px-6 lg:px-20">
       <div className="container mx-auto px-8 xl:px-30 py-16 flex flex-col lg:flex-row items-center gap-10">
