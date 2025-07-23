@@ -9,7 +9,7 @@ export default function Footer() {
     <footer
       className="relative bg-cover bg-center pt-2 pb-0"
       style={{
-        backgroundImage: `url('public/footer.png')`, // Correct path for public folder
+        backgroundImage: `url('/footer.png')`, // Correct path for public folder
       }}
     >
       {/* Main footer content */}
@@ -21,7 +21,7 @@ export default function Footer() {
               {/* Logo */}
               <div className="flex ">
                 <img
-                  src="/public/footer_logo.png" // Path to your logo
+                  src="/footer_logo.png" // Path to your logo
                   alt="Logo"
                   className="h-30 w-auto " // TailwindCSS classes to control size
                 />

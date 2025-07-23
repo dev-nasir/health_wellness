@@ -34,7 +34,7 @@ const GetInTouch = () => {
             <video
               ref={videoRef}
               className="absolute top-0 left-0 w-full h-full object-cover rounded-xl"
-              poster="/public/poster.png" // Optional: add a video poster image
+              poster="/poster.png" // Optional: add a video poster image
               onEnded={handleVideoEnd} // Show button when the video ends
             >
               <source
@@ -51,7 +51,7 @@ const GetInTouch = () => {
                 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-50 text-white text-xl w-[94px] h-[94px] rounded-full"
               >
                 <img
-                  src="/public/play-button.png" // Correct path for image in public folder
+                  src="/play-button.png" 
                   alt="play button"
                 />
               </button>

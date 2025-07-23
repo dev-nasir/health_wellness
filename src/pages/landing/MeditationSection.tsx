@@ -11,7 +11,7 @@ const MeditationSection = () => {
         {/* Left: Image with Play Button */}
         <div className="relative  flex-2/5 rounded-full overflow-hidden">
           <img
-            src="/public/meditation.png" // Replace with your actual image path
+            src="/meditation.png" // Replace with your actual image path
             alt="Meditation"
             className="w-full h-full object-cover"
           />

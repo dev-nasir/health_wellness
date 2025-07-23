@@ -3,7 +3,7 @@ const HeroSection = () => {
     <section
       className="relative bg-cover "
       style={{
-        backgroundImage: `url('public/bg-image.png')`, // Correct path for public folder
+        backgroundImage: `url('/bg-image.png')`, // Correct path for public folder
       }}
     >
       <div className="absolute inset-0 bg-black opacity-40"></div>

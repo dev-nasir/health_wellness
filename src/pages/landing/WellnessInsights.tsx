@@ -20,7 +20,7 @@ const WellnessInsights = () => {
             {/* Card 1 */}
             <div>
               <img
-                src="/public/yoga.png" // replace with your image
+                src="/yoga.png" // replace with your image
                 alt="Yoga Pose"
                 className="rounded-xl w-[628px] h-[747px] object-cover mb-6"
               />
@@ -38,7 +38,7 @@ const WellnessInsights = () => {
             {/* Card 2 */}
             <div>
               <img
-                src="/public/stone.png" // replace with your image
+                src="/stone.png" // replace with your image
                 alt="Tranquility"
                 className="rounded-xl w-[421px] h-[505px] object-cover mb-6"
               />

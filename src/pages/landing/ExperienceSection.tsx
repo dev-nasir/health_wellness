@@ -38,7 +38,7 @@ export default function MeditationWorkshop() {
             <div className="overflow-hidden">
               <div className="w-full h-full flex items-center justify-center">
                 <img
-                  src="/public/exp-1.png" // Replace with your actual image
+                  src="exp-1.png" // Replace with your actual image
                   alt="Experience 1"
                   className="w-full h-auto object-cover rounded-xl"
                 />
@@ -50,7 +50,7 @@ export default function MeditationWorkshop() {
             <div className=" overflow-hidden ">
               <div className="w-full h-full flex items-center justify-center">
                 <img
-                  src="/public/exp-3.png" // Replace with your actual image
+                  src="/exp-3.png" // Replace with your actual image
                   alt="Experience 3"
                   className="w-full h-auto object-cover rounded-xl"
                 />
@@ -62,7 +62,7 @@ export default function MeditationWorkshop() {
             <div className="overflow-hidden">
               <div className="w-full h-full flex items-center justify-center">
                 <img
-                  src="/public/exp-4.png" // Replace with your actual image
+                  src="/exp-4.png" // Replace with your actual image
                   alt="Experience 4"
                   className="w-full h-auto object-cover rounded-xl"
                 />
@@ -74,7 +74,7 @@ export default function MeditationWorkshop() {
             <div className=" overflow-hidden ">
               <div className="w-full h-full flex items-center justify-center">
                 <img
-                  src="/public/exp-2.png" // Replace with your actual image
+                  src="/exp-2.png" // Replace with your actual image
                   alt="Experience 2"
                   className="w-full h-auto object-cover rounded-xl"
                 />
@@ -86,7 +86,7 @@ export default function MeditationWorkshop() {
             <div className="overflow-hidden ">
               <div className="w-full h-full flex items-center justify-center">
                 <img
-                  src="/public/exp-5.png" // Replace with your actual image
+                  src="/exp-5.png" // Replace with your actual image
                   alt="Experience 5"
                   className="w-full h-auto object-cover rounded-xl"
                 />

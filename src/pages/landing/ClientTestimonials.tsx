@@ -54,7 +54,7 @@ const ClientTestimonials = () => {
           {/* Left: Image */}
           <div className="w-full lg:w-1/2 flex justify-center">
             <img
-              src="/public/team-ceo.png" // Replace with your actual image
+              src="/team-ceo.png" // Replace with your actual image
               alt="Client"
               className="w-120 h-130 object-cover rounded-xl"
             />
