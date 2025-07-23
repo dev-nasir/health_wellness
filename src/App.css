@@ -2,7 +2,12 @@
 
 
 @theme {
-  --color-primary: #1A73E8;
+  --color-primary: #8F8F8F;
   --color-secondary: #E91E63;
-  
+  --color-background: #1D5A4A;
+ --color-heading: #2F423C;
+  --color-bg: #545454;
+ 
+   --text-size: 56px;
 }
+
