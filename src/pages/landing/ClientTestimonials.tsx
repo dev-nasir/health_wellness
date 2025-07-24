@@ -8,7 +8,7 @@ const ClientTestimonials = () => {
       text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.",
       name: "LINETTE HAYWARD",
       role: "CEO of Vaco Company",
-      bgColor: "bg-green-900",
+      bgColor: "bg-[#1D5A4A]",
       textColor: "text-white",
     },
     {
@@ -18,20 +18,20 @@ const ClientTestimonials = () => {
       bgColor: "bg-[#edf0e5]",
       textColor: "text-gray-800",
     },
-    {
-      text: "We deliver best-in-class IT services, bringing innovative solutions that help your business grow and thrive in the digital era.",
-      name: "MATT JOHNSON",
-      role: "CTO of TechCo Solutions",
-      bgColor: "bg-blue-900",
-      textColor: "text-white",
-    },
-    {
-      text: "Transforming businesses with cutting-edge technology and creative solutions that empower organizations to achieve more.",
-      name: "SARAH LEE",
-      role: "COO of Innovatech",
-      bgColor: "bg-yellow-900",
-      textColor: "text-white",
-    },
+    // {
+    //   text: "We deliver best-in-class IT services, bringing innovative solutions that help your business grow and thrive in the digital era.",
+    //   name: "MATT JOHNSON",
+    //   role: "CTO of TechCo Solutions",
+    //   bgColor: "bg-blue-900",
+    //   textColor: "text-white",
+    // },
+    // {
+    //   text: "Transforming businesses with cutting-edge technology and creative solutions that empower organizations to achieve more.",
+    //   name: "SARAH LEE",
+    //   role: "COO of Innovatech",
+    //   bgColor: "bg-yellow-900",
+    //   textColor: "text-white",
+    // },
   ];
 
   const goToNext = () => {
@@ -39,7 +39,9 @@ const ClientTestimonials = () => {
   };
 
   const goToPrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 2 + testimonials.length) % testimonials.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 2 + testimonials.length) % testimonials.length
+    );
   };
 
   const displayedTestimonials = [
@@ -74,31 +76,51 @@ const ClientTestimonials = () => {
             <div>
               {/* Testimonial Cards */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              
                 {/* Dynamically Render Testimonial Cards */}
                 {displayedTestimonials.map((testimonial, index) => (
                   <div
                     key={index}
-                    className={`${testimonial.bgColor} ${testimonial.textColor} p-6 rounded-xl shadow`}
+                    className={`${testimonial.bgColor} ${testimonial.textColor} p-6 rounded-xl shadow text-center relative`}
+                    
                   >
-                    <p className="text-2xl mb-4">❝</p>
-                    <p className="text-sm mb-4 leading-relaxed">{testimonial.text}</p>
-                    <p className="font-semibold">{testimonial.name}</p>
-                    <p className="text-xs">{testimonial.role}</p>
+                    {/* Double Quotation Icon at the top */}
+                    <div className="flex justify-center mb-4">
+                      <img
+                        src="/double-quotation.png" // Replace with your actual image
+                        alt="double quotation"
+                        className={`w-[60px] h-[60px] ${
+                          testimonial.bgColor === "bg-[#1D5A4A]"
+                            ? "filter invert(100%)" // Invert color to white on green background
+                            : "filter invert(10%)" // Keep the color green on light background
+                        }`}
+                      />
+                    </div>
+
+                    <p className="text-sm mb-4 text-[18px]leading-relaxed">
+                      {testimonial.text}
+                    </p>
+                    <p className="font-semibold text-[20px]">
+                      {testimonial.name}
+                    </p>
+                    <p className="text-xs color-[#DBDBDB] text-[18px]">
+                      {testimonial.role}
+                    </p>
                   </div>
                 ))}
               </div>
 
               {/* Arrows */}
-              <div className="flex xl:justify-center justify-end  sm:justify-end  md:justify-end lg:justify-end mt-8 gap-6">
+              <div className="flex xl:justify-end justify-end sm:justify-end md:justify-end lg:justify-end  mt-8 gap-6">
                 <button
                   onClick={goToPrev}
-                  className="text-green-900 text-xl hover:scale-110 transition"
+                  className="text-green-900 text-xl cursor-pointer hover:scale-110 transition"
                 >
                   ←
                 </button>
                 <button
                   onClick={goToNext}
-                  className="text-green-900 text-xl hover:scale-110 transition"
+                  className="text-green-900 text-xl cursor-pointer hover:scale-110 transition"
                 >
                   →
                 </button>

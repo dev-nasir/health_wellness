@@ -1,3 +1,5 @@
+import Button from "../../components/ui/button";
+
 export default function MeditationWorkshop() {
   return (
     <section className="bg-[#edf0e5] py-6 xl:py-16 px-4 sm:px-6 lg:px-20">
@@ -11,9 +13,7 @@ export default function MeditationWorkshop() {
               Workshops and Retreats
             </h1>
           </div>
-          <button className="bg-teal-700 hover:bg-teal-800 text-white px-6 py-3 rounded-full text-sm font-medium transition-colors ml-8 whitespace-nowrap">
-            View More
-          </button>
+        <Button text="View More"/>
         </div>
         {/* Description Text */}
         <div className="mb-12 max-w-4xl">
