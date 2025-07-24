@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import InputField from "../../components/ui/inputField";
+import Button from "../../components/ui/button";
 
 const GetInTouch = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -43,8 +44,7 @@ const GetInTouch = () => {
               />
               Your browser does not support the video tag.
             </video>
-
-            {/* Custom Play/Pause Button */}
+            
             {isButtonVisible && (
               <button
                 onClick={togglePlay}
@@ -105,12 +105,7 @@ const GetInTouch = () => {
             </div>
 
             <div className="text-center flex">
-              <button
-                type="submit"
-                className="bg-green-900 text-white px-8 py-3 rounded-full text-sm hover:bg-green-800 transition"
-              >
-                Submit
-              </button>
+          <Button text="Submit"/>
             </div>
           </form>
         </div>

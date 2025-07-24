@@ -1,3 +1,5 @@
+import Button from "../../components/ui/button";
+
 const WellnessInsights = () => {
   return (
     <section className="bg-[#edf0e5] py-6 xl:py-16 px-4 sm:px-6  lg:px-20">
@@ -52,9 +54,7 @@ const WellnessInsights = () => {
                 text ever since the 1500s, when an unknown printer took a galley
                 of type and scrambled.
               </p>
-              <button className="bg-green-900 text-white px-6 py-2 rounded-full text-sm hover:bg-green-800 transition">
-                Explore More
-              </button>
+             <Button text="Explore More" />
             </div>
           </div>
         </div>

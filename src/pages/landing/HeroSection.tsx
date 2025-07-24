@@ -1,3 +1,5 @@
+import Button from "../../components/ui/button";
+
 const HeroSection = () => {
   return (
     <section
@@ -23,10 +25,10 @@ const HeroSection = () => {
             ever since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make a type specimen book.
           </p>
-
-          <button className="bg-background hover:bg-green-700 transition-all duration-300 text-white py-3 px-8 sm:py-4 sm:px-10 rounded-lg text-base sm:text-lg font-medium shadow-lg hover:shadow-xl transform hover:scale-105">
+          <Button text="Explore More" />
+          {/* <button className="bg-background hover:bg-green-700 transition-all duration-300 text-white py-3 px-8 sm:py-4 sm:px-10 rounded-lg text-base sm:text-lg font-medium shadow-lg hover:shadow-xl transform hover:scale-105">
             Explore More
-          </button>
+          </button> */}
         </div>
 
         {/* Right Side Image */}
