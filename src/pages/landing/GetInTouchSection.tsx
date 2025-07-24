@@ -50,10 +50,7 @@ const GetInTouch = () => {
                 onClick={togglePlay}
                 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-50 text-white text-xl w-[94px] h-[94px] rounded-full"
               >
-                <img
-                  src="/play-button.png" 
-                  alt="play button"
-                />
+                <img src="/play-button.png" alt="play button" />
               </button>
             )}
           </div>
@@ -67,13 +64,25 @@ const GetInTouch = () => {
           {/* Contact Form */}
           <form className="space-y-6 max-w-lg mx-auto lg:mx-0 ">
             <div className="flex gap-14">
-              <InputField label="Your name" type="text" />
-              <InputField label="Your email" type="email" />
+              <InputField
+                label="Your name"
+                type="text"
+                placeholder="Your name"
+              />
+              <InputField label="Your email" type="email" placeholder="email" />
             </div>
 
             <div className="flex gap-14">
-              <InputField label="Your number" type="number" />
-              <InputField label="Your subject" type="text" />
+              <InputField
+                label="Your number"
+                type="number"
+                placeholder="Phone number "
+              />
+              <InputField
+                label="Your subject"
+                type="text"
+                placeholder="Subject"
+              />
             </div>
 
             <div>
