@@ -34,7 +34,7 @@ const MeditationSection = () => {
       setIsButtonVisible(true); // Show the button when paused
     }
   };
-
+console.log(isPlaying)
   return (
     <section className="bg-[#edf0e5] py-14 px-4 sm:px-6 lg:px-20">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
