@@ -1,4 +1,4 @@
-
+import { useState } from "react";
 
 const ArticalSection = () => {
   return (
@@ -35,11 +35,11 @@ const ArticalSection = () => {
                     standard dummy text ever since the 1500s.
                   </p>
                   <div className="absolute">
-                    <button className="p-2 pt-16 pr-8 rounded-full cursor-pointer text-white transition duration-300">
+                    <button className="p-2 pt-16 pr-8 rounded-full cursor-pointer text-white transition duration-300 hover:scale-105 hover:text-green-500">
                       <img
-                        src="/src/assets/images/Arrow 3.png"
+                        src="/Arrow 3.png"
                         alt="img"
-                        className="w-14"
+                        className="w-14 transition duration-300 transform hover:filter hover:invert-[0.4] hover:brightness-125"
                       />
                     </button>
                   </div>
@@ -66,11 +66,11 @@ const ArticalSection = () => {
                     standard dummy text ever since the 1500s.
                   </p>
                   <div className="absolute">
-                    <button className="p-2  rounded-full text-white cursor-pointer transition duration-300">
+                    <button className="p-2  rounded-full text-white cursor-pointer transition duration-300 hover:scale-105 hover:text-green-500">
                       <img
-                        src="/src/assets/images/Arrow 3.png"
+                        src="/Arrow 3.png"
                         alt="img"
-                        className="w-14"
+                        className="w-14 transition duration-300 transform hover:filter hover:invert-[0.4] hover:brightness-125"
                       />
                     </button>
                   </div>
@@ -84,21 +84,21 @@ const ArticalSection = () => {
                   backgroundImage: "url('/artical-3.png')",
                 }}
               >
-                  <div className="text-white text-center lg:text-left max-w-2xl px-4 pb-12 xl:px-10 py-0">
-                 <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-[32px] font-bold mb-4 leading-tight">
+                <div className="text-white text-center lg:text-left max-w-2xl px-4 pb-12 xl:px-10 py-0">
+                  <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-[32px] font-bold mb-4 leading-tight">
                     Mental Health Counseling
                   </h1>
-                  <p className=" text-sm sm:text-base lg:4xl-lg opacity-90 xl:w-[76%] xl:text-[18px]">
+                  <p className="text-sm sm:text-base lg:4xl-lg opacity-90 xl:w-[76%] xl:text-[18px]">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s.
                   </p>
                   <div className="absolute">
-                    <button className="pt-8  rounded-full text-white cursor-pointer transition duration-300">
+                    <button className="pt-8  rounded-full text-white cursor-pointer transition duration-300 hover:scale-105 hover:text-green-500">
                       <img
-                        src="/src/assets/images/Arrow 3.png"
+                        src="/Arrow 3.png"
                         alt="img"
-                        className="w-14"
+                        className="w-14 transition duration-300 transform hover:filter hover:invert-[0.4] hover:brightness-125"
                       />
                     </button>
                   </div>
