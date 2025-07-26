@@ -7,49 +7,48 @@ import { useRef, useState } from "react";
 
 const MeditationSection = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isButtonVisible, setIsButtonVisible] = useState(true); // Track button visibility
+  const [isButtonVisible, setIsButtonVisible] = useState(true);
   const videoRef = useRef<any>(null);
 
   const togglePlay = () => {
     if (videoRef.current.paused) {
       videoRef.current.play();
       setIsPlaying(true);
-      setIsButtonVisible(false); // Hide the button when playing
+      setIsButtonVisible(false);
     } else {
       videoRef.current.pause();
       setIsPlaying(false);
-      setIsButtonVisible(true); // Show the button when paused
+      setIsButtonVisible(true);
     }
   };
 
   const handleVideoEnd = () => {
     setIsPlaying(false);
-    setIsButtonVisible(true); // Show the button again when video ends
+    setIsButtonVisible(true);
   };
 
   const handleVideoClick = () => {
     if (!videoRef.current.paused) {
       videoRef.current.pause();
       setIsPlaying(false);
-      setIsButtonVisible(true); // Show the button when paused
+      setIsButtonVisible(true);
     }
   };
-  console.log(isPlaying);
+console.log(isPlaying)
   return (
     <section className="bg-[#edf0e5] py-14 px-4 sm:px-6 lg:px-20">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
         {/* Left: Video with Play Button */}
-
-        <div className="relative w-[300px]  sm:w-[350px]  md:w-[430px]  xl:w-[564px]">
+        <div className="relative w-[300px] sm:w-[350px] md:w-[430px] xl:w-[564px] ">
           <video
             ref={videoRef}
-            className="w-full h-full object-cover rounded-full overflow-hidden"
-            poster="/meditation.png" // Optional: Use a poster image when video is not playing
+            className="w-full h-[310px] sm:h-[340px] md:h-[410px] lg:h-[410px] xl:h-[510px] object-cover rounded-full overflow-hidden"
+            poster="/meditation.png"
             onEnded={handleVideoEnd}
             onClick={handleVideoClick}
           >
             <source
-              src="https://www.w3schools.com/html/mov_bbb.mp4" // Dummy video link
+              src="https://www.w3schools.com/html/mov_bbb.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.
@@ -64,6 +63,7 @@ const MeditationSection = () => {
             </button>
           )}
         </div>
+
         {/* Right Content */}
         <div className="text-center lg:text-left flex-3/5">
           <h2 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-Chocolates font-bold text-heading mb-4">
@@ -72,9 +72,7 @@ const MeditationSection = () => {
           </h2>
           <p className="text-gray-600 mb-8 text-sm sm:text-base font-Chocolates font-light leading-relaxed">
             Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled.
+            industry...
           </p>
 
           {/* Features Grid */}
