@@ -1,11 +1,54 @@
 @import "tailwindcss";
 
-@layer utilities {
-  .bg-hero {
-    background-image: url('/images/bg-image.png');
-  }
+@font-face {
+  font-family: "TT_Chocolates_Trial";
+  src: url("./assets/fonts/TT_Chocolates_Trial_Light.otf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }
 
+
+@font-face {
+  font-family: "TT_Chocolates_Trial"; 
+  src: url("./assets/fonts/TT_Chocolates_Trial_Regular.otf") format("truetype"); 
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT_Chocolates_Trial";
+  src: url("./assets/fonts/TT_Chocolates_Trial_Medium.otf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT_Chocolates_Trial";
+  src: url("./assets/fonts/TT_Chocolates_Trial_.otf")
+    format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT_Chocolates_Trial";
+  src: url("./assets/fonts/TT_Chocolates_Trial_Bold.otf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT_Chocolates_Trial";
+  src: url("./assets/fonts/TT_Chocolates_Trial_ExtraBold.otf")
+    format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+@layer utilities {
+  .bg-hero {
+    background-image: url("/images/bg-image.png");
+  }
+}
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

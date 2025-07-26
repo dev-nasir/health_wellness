@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
-
 @theme {
-  --color-primary: #8F8F8F;
-  --color-secondary: #E91E63;
-  --color-background: #1D5A4A;
- --color-heading: #2F423C;
+  --color-primary: #8f8f8f;
+  --color-secondary: #e91e63;
+  --color-background: #1d5a4a;
+  --color-heading: #2f423c;
   --color-bg: #545454;
- 
-   --text-size: 56px;
-}
 
+  --font-Chocolates: "TT_Chocolates_Trial", sans-serif;
+
+  --text-size: 56px;
+}
