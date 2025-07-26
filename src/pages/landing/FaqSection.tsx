@@ -1,4 +1,4 @@
-import { useState, type SetStateAction } from "react";
+import { useState,} from "react";
 import {
   Accordion,
   AccordionContent,
@@ -48,6 +48,8 @@ const FaqSection = () => {
   const toggleAccordion = (id: any) => {
     setActiveAccordion(activeAccordion === id ? null : id);
   };
+
+  
 
   return (
     <div className="w-full max-w-7xl mx-auto py-8 px-4 xl:py-16">
