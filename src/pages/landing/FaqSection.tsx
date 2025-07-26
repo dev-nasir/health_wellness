@@ -1,4 +1,4 @@
-
+import { useState, type SetStateAction } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -43,13 +43,19 @@ const faqData = [
 ];
 
 const FaqSection = () => {
+  const [activeAccordion, setActiveAccordion] = useState(null);
+
+  const toggleAccordion = (id: any) => {
+    setActiveAccordion(activeAccordion === id ? null : id);
+  };
+
   return (
     <div className="w-full max-w-7xl mx-auto py-8 px-4 xl:py-16">
-      <h2 className="text-2xl md:text-4xl font-bold text-center mb-12 text-foreground">
+      <h2 className="text-2xl md:text-4xl font-Chocolates font-bold text-center mb-2 xl:mb-12 text-foreground">
         Frequently Asked Questions
       </h2>
       <div className="relative container mx-auto px-8 xl:px-10 py-4 xl:py-16 flex flex-col lg:flex-row items-center">
-        <div className="space-y-4">
+        <div className="space-y-4 w-full">
           <Accordion type="single" collapsible className="w-full">
             {faqData.map((faq) => (
               <AccordionItem
@@ -59,10 +65,11 @@ const FaqSection = () => {
               >
                 <AccordionTrigger
                   hideChevron
-                  className="px-6 py-5 text-left hover:no-underline transition-colors duration-200"
+                  className="px-6 py-5 text-left hover:no-underline !no-underline transition-colors duration-200"
+                  onClick={() => toggleAccordion(faq.id)}
                 >
                   <div className="flex items-center justify-between w-full">
-                    <span className="text-base font-medium text-foreground pr-4 leading-relaxed hover:font-bold hover:no-underline">
+                    <span className="text-base no-underline font-light font-Chocolates text-foreground pr-4 leading-relaxed hover:font-medium hover:no-underline">
                       {faq.question}
                     </span>
                     <div
@@ -79,18 +86,29 @@ const FaqSection = () => {
                         fill="none"
                         className="text-white transition-transform duration-200"
                       >
-                        <path
-                          d="M6 1V11M1 6H11"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                        />
+                        {activeAccordion === faq.id ? (
+                          // Minus icon when expanded
+                          <path
+                            d="M1 6H11"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                          />
+                        ) : (
+                          // Plus icon when collapsed
+                          <path
+                            d="M6 1V11M1 6H11"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                          />
+                        )}
                       </svg>
                     </div>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-6 pt-2">
-                  <p className="text-heading leading-relaxed">{faq.answer}</p>
+                  <p className="text-heading font-Chocolates font-light leading-relaxed">{faq.answer}</p>
                 </AccordionContent>
               </AccordionItem>
             ))}

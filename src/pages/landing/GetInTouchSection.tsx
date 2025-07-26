@@ -25,6 +25,16 @@ const GetInTouch = () => {
     setIsPlaying(false);
     setIsButtonVisible(true); // Show the button again when video ends
   };
+ const handleVideoClick = () => {
+    if (!videoRef.current.paused) {
+      videoRef.current.pause();
+      setIsPlaying(false);
+      setIsButtonVisible(true); // Show the button when paused
+    }
+  };
+
+
+
   console.log(isPlaying);
   return (
     <section className="bg-white py-16 px-4 sm:px-6 lg:px-20">
@@ -36,7 +46,8 @@ const GetInTouch = () => {
               ref={videoRef}
               className="absolute top-0 left-0 w-full h-full object-cover rounded-xl"
               poster="/poster.png" // Optional: add a video poster image
-              onEnded={handleVideoEnd} // Show button when the video ends
+              onEnded={handleVideoEnd}
+              onClick={handleVideoClick} // Show button when the video ends
             >
               <source
                 src="https://www.w3schools.com/html/mov_bbb.mp4" // Dummy video link
@@ -57,8 +68,8 @@ const GetInTouch = () => {
         </div>
 
         {/* Right: Get in Touch Form */}
-        <div className="w-full lg:w-1/2 text-center lg:text-left">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-heading mb-6">
+        <div className="w-full lg:w-1/2 text-center lg:text-left font-Chocolates">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-Chocolates font-bold text-heading mb-2 xl:mb-6">
             Get In Touch
           </h2>
           {/* Contact Form */}
@@ -86,7 +97,7 @@ const GetInTouch = () => {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-heading flex align-item-center">
+              <label className="text-sm font-medium text-heading flex align-item-center">
                 Your Message
               </label>
               <textarea
@@ -103,10 +114,7 @@ const GetInTouch = () => {
                 I agree that my submitted data is being collected and stored.
               </label>
             </div>
-
-            <div className="text-center flex">
           <Button text="Submit"/>
-            </div>
           </form>
         </div>
       </div>

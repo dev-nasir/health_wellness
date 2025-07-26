@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black opacity-40"></div>
       <div className="relative container mx-auto px-8 xl:px-30 py-16 flex flex-col lg:flex-row  items-center">
         <div className=" flex-1 text-white max-w-lg lg:max-w-xl text-center lg:text-left lg:flex-1">
-          <h1 className="text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 sm:mb-8 leading-tight">
+          <h1 className="text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-Chocolates font-extrabold  mb-6 sm:mb-8 leading-tight">
             Personalized
             <br />
             Health & Wellness
@@ -19,7 +19,7 @@ const HeroSection = () => {
             Solutions for You
           </h1>
 
-          <p className="mb-8 sm:mb-10 text-sm sm:text-base lg:text-lg leading-relaxed opacity-90 max-w-md mx-auto lg:mx-0">
+          <p className="mb-8 sm:mb-10 text-sm sm:text-base lg:text-lg leading-relaxed opacity-90 max-w-md mx-auto lg:mx-0 font-Chocolates font-normal ">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type

@@ -2,12 +2,12 @@ import Button from "../../components/ui/button";
 
 export default function MeditationWorkshop() {
   return (
-    <section className="bg-[#edf0e5] py-6 xl:py-16 px-4 sm:px-6 lg:px-20">
+    <section className="bg-[#edf0e5] py-6 xl:py-16 px-4 sm:px-6  lg:px-20">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
-        <div className="flex justify-between items-start mb-6">
+        <div className="flex xl:justify-between  xl:items-start mb-6 items-start flex-col  md:flex-col md:items-start  lg:flex-col lg:justify-between xl:flex-col">
           <div className="flex-1">
-            <h1 className="text-2xl  sm:text-3xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+            <h1 className="text-2xl  sm:text-3xl md:text-4xl font-Chocolates font-bold text-gray-900 leading-tight mb-2 xl:mb-6">
               Experience Together Meditation
               <br />
               Workshops and Retreats
@@ -17,7 +17,7 @@ export default function MeditationWorkshop() {
         </div>
         {/* Description Text */}
         <div className="mb-12 max-w-4xl">
-          <p className="text-gray-600 text-sm leading-relaxed">
+          <p className="text-gray-600 text-sm leading-relaxed font-Chocolates font-light">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type

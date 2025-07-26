@@ -34,13 +34,13 @@ const MeditationSection = () => {
       setIsButtonVisible(true); // Show the button when paused
     }
   };
-console.log(isPlaying)
+  console.log(isPlaying);
   return (
     <section className="bg-[#edf0e5] py-14 px-4 sm:px-6 lg:px-20">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
         {/* Left: Video with Play Button */}
-        
-        <div className="relative w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] " >
+
+        <div className="relative w-[300px]  sm:w-[350px]  md:w-[430px]  xl:w-[564px]">
           <video
             ref={videoRef}
             className="w-full h-full object-cover rounded-full overflow-hidden"
@@ -66,11 +66,11 @@ console.log(isPlaying)
         </div>
         {/* Right Content */}
         <div className="text-center lg:text-left flex-3/5">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[56px] font-bold text-heading mb-4">
-            Experience Deep Relaxation <br />
+          <h2 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-Chocolates font-bold text-heading mb-4">
+            Experience Deep Relaxation <br className="hidden xl:block" />
             Start Your Meditation
           </h2>
-          <p className="text-gray-600 mb-6 text-sm sm:text-base xl:text-[18px] leading-relaxed">
+          <p className="text-gray-600 mb-8 text-sm sm:text-base font-Chocolates font-light leading-relaxed">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -78,7 +78,7 @@ console.log(isPlaying)
           </p>
 
           {/* Features Grid */}
-          <div className="grid grid-cols-2 gap-10 mb-18">
+          <div className="grid grid-cols-2 gap-4 xl:gap-10 mb-10 xl:mb-18">
             {[
               { label: "Relieving Stress", icon: stress },
               { label: "Peaceful Mind", icon: peaceFull },
@@ -89,7 +89,7 @@ console.log(isPlaying)
                 key={index}
                 className="flex items-center justify-center lg:justify-start flex-col md:flex-row gap-6 text-sm xl:text-2xl text-[#A8856D]"
               >
-                <div className="w-[58px] h-[58px] bg-[#A8856D] rounded-full flex items-center justify-center text-white text-2xl font-bold">
+                <div className="w-[58px] h-[58px] bg-[#A8856D] rounded-full flex items-center justify-center text-white text-2xl font-Chocolates font-medium">
                   <img src={item.icon} alt="icon" className="w-8" />
                 </div>
                 {item.label}
